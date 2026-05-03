@@ -69,12 +69,12 @@ The ship catalog is stored in: data/products.js
 
 Each ship has fields such as:
 
-id
-name
-price
-desc
-img
-soldOut
+- id
+- name
+- price
+- desc
+- img
+- soldOut
 
 The img field points to the S3-hosted image URL for each ship.
 
@@ -84,10 +84,10 @@ The cart is stored in memory using a simple JavaScript array inside app.js.
 
 Users can:
 
-Add available ships to the cart
-View the cart on the Hangar page
-Remove ships from the cart
-See the cart total update
+- Add available ships to the cart
+- View the cart on the Hangar page
+- Remove ships from the cart
+- See the cart total update
 
 Because the cart is stored in memory, it resets when the Node.js server restarts. This was intentional to keep the project beginner-friendly and focused on the required cloud concepts.
 
@@ -115,23 +115,23 @@ The S3 bucket is used only for public product images, not private or sensitive d
 
 OpenClaw was used as a meaningful development tool throughout the project. It helped with:
 
-Scaffolding the Express/EJS app
-Creating starter routes and views
-Generating product data
-Improving the catalog and product pages
-Adding sold-out logic
-Adding cart remove functionality
-Troubleshooting syntax and layout issues
-Planning the AWS S3 integration
+- Scaffolding the Express/EJS app
+- Creating starter routes and views
+- Generating product data
+- Improving the catalog and product pages
+- Adding sold-out logic
+- Adding cart remove functionality
+- Troubleshooting syntax and layout issues
+- Planning the AWS S3 integration
 
 The code was reviewed, edited, and tested manually on the EC2 instance.
 
 ## Current Limitations
-No real payment processing
-No user accounts or authentication
-Cart data is stored in memory and resets on restart
-Product data is stored in a local JavaScript file instead of a database
-Cloudflared public URLs are temporary
+- No real payment processing
+- No user accounts or authentication
+- Cart data is stored in memory and resets on restart
+- Product data is stored in a local JavaScript file instead of a database
+- Cloudflared public URLs are temporary
 
 These limitations were intentional to keep the first version simple and focused on EC2, S3, and core application functionality.
 
@@ -139,14 +139,14 @@ These limitations were intentional to keep the first version simple and focused 
 
 If I had more time, I would consider adding:
 
-DynamoDB for persistent product or cart data
-CloudWatch for logs and monitoring
-Product filtering or search
-Themed currency options
-More ship categories
-Improved homepage artwork and sci-fi line-art styling
-A more advanced cart with quantities
-Admin-style product editing
+- DynamoDB for persistent product or cart data
+- CloudWatch for logs and monitoring
+- Product filtering or search
+- Themed currency options
+- More ship categories
+- Improved homepage artwork and sci-fi line-art styling
+- A more advanced cart with quantities
+- Admin-style product editing
 
 ## Architecture Summary
 
