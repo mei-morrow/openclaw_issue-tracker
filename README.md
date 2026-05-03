@@ -43,6 +43,7 @@ This makes S3 a meaningful part of the application architecture because it separ
 
 ## Application Structure
 
+```text
 star-wars-store/
 ├── app.js
 ├── package.json
@@ -60,6 +61,7 @@ star-wars-store/
     └── partials/
         ├── header.ejs
         └── footer.ejs
+```
 
 ## Product Data
 
